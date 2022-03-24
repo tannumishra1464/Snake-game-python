@@ -43,8 +43,7 @@ sr.hideturtle()
 sr.goto(0,965)
 sr.write("Score:0 High Score:0",align="center",font=("Courier", 10, "normal"))
 
-
-	
+#Functions.	
 def go_up():
 		h.direction="Up"
 def go_down():
