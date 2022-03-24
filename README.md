@@ -5,13 +5,15 @@ import time
 delay=0.1
 score=0
 high_score=0
+
+#Creating Screen.
 sc=turtle.Screen()
 sc.bgcolor("cyan")
 sc.bgpic("20220323_162053_0000.png")
 sc.title("Snake game by Tannu")
 sc.tracer(0)
 
-#Creating head
+#Creating head.
 h=turtle.Turtle()
 h.speed()
 h.shape("square")
@@ -41,8 +43,8 @@ sr.penup()
 sr.hideturtle()
 sr.goto(0,965)
 sr.write("Score:0 High Score:0",align="center",font=("Courier", 10, "normal"))
-#Functions
-	
+
+#Functions	
 def go_up():
 		h.direction="Up"
 def go_down():
@@ -64,6 +66,8 @@ def move():
     if h.direction == "Right":
         x = h.xcor()
         h.setx(x+20)
+
+#Keyboard Bindings.
 sc.listen()
 sc.onkeypress(go_up,"Up")
 sc.onkeypress(go_down,"Down")
