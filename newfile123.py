@@ -24,7 +24,7 @@ h.direction="stop"
 segment = []
 
 
-#Creating Food
+#Creating Food.
 f=turtle.Turtle()
 f.speed(0)
 f.shape("circle")
@@ -33,7 +33,7 @@ f.penup()
 f.shapesize(2,2)
 f.goto(0,0)
 
-#Scores
+#Scores.
 sr=turtle.Turtle()
 sr.speed(0)
 sr.shape("square")
@@ -65,6 +65,8 @@ def move():
     if h.direction == "Right":
         x = h.xcor()
         h.setx(x+20)
+
+#Keyboard Bindings.
 sc.listen()
 sc.onkeypress(go_up,"Up")
 sc.onkeypress(go_down,"Down")
