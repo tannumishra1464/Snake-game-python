@@ -5,7 +5,7 @@ delay=0.1
 score=0
 high_score=0
 
-#Screen Creating.
+#Creating Screen.
 sc=turtle.Screen()
 sc.bgcolor("cyan")
 sc.bgpic("20220323_162053_0000.png")
