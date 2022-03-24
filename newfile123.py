@@ -4,13 +4,15 @@ import time
 delay=0.1
 score=0
 high_score=0
+
+#Screen Creating.
 sc=turtle.Screen()
 sc.bgcolor("cyan")
 sc.bgpic("20220323_162053_0000.png")
 sc.title("Snake game by Tannu")
 sc.tracer(0)
 
-#Creating head
+#Creating Head.
 h=turtle.Turtle()
 h.speed()
 h.shape("square")
@@ -22,7 +24,7 @@ h.direction="stop"
 segment = []
 
 
-#Creating food
+#Creating Food
 f=turtle.Turtle()
 f.speed(0)
 f.shape("circle")
@@ -40,7 +42,8 @@ sr.penup()
 sr.hideturtle()
 sr.goto(0,965)
 sr.write("Score:0 High Score:0",align="center",font=("Courier", 10, "normal"))
-#Functions
+
+
 	
 def go_up():
 		h.direction="Up"
